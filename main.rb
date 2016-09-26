@@ -55,17 +55,14 @@ def get_op(scraper)
   when "1"
     scrape.print_titles
     puts "Press any key to continue"
-    gets
     get_op scrape
   when "2"
     scrape.print_descriptions
     puts "Press any key to continue"
-    gets
     get_op scrape
   when "3"
     scrape.print_feed
     puts "Press any key to continue"
-    gets
     get_op scrape
   when "4"
     puts "Saving feed..."
@@ -97,6 +94,7 @@ def get_op(scraper)
     puts "Goodbye"
   else
     puts "I don't Understand\n"
+    main
   end
 end
 
